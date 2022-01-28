@@ -21,6 +21,7 @@ while(true){
     let i   //当前位
     for (i=n; i>=0; i--){
         if (numbers[i]<max_num[i]){
+            // 正常情况下末位+1，否则进位，那么后面的位数全部重置为比前一位大1
             numbers[i]++
             for (let k=i+1; k<numbers.length; k++){
                 numbers[k]= numbers[k-1]+1
